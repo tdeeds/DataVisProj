@@ -33,7 +33,7 @@ def home():
 	return data.to_json()
 
 
-@app.route('/data',methods=['GET'])
+@app.route('/definitionData',methods=['GET'])
 def get_data():
 	mx = int(request.args.get('max'));
 	app.logger.info(mx)
